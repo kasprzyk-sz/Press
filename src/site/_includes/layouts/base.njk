@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="vf-no-js">
+  <head>
+    {% render '@vf-no-js' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="{{ '/css/styles.css' | url }}" />
+    <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
+
+    {% render '@embl-favicon' %}
+
+    <!-- Content descriptors -->
+    <meta name="embl:who" content="Head of EMBL Comms"> <!-- the people, groups and teams involved -->
+    <meta name="embl:where" content="EMBL"> <!-- at which EMBL sites the content applies -->
+    <meta name="embl:what" content="EMBL Design System"> <!-- the activities covered -->
+    <meta name="embl:active" content="what"> <!-- which of the who/what/where is active -->
+
+    <!-- Content role -->
+    <meta name="embl:utility" content="-8"> <!-- if content is task and work based or if is meant to inspire -->
+    <meta name="embl:reach" content="-5"> <!-- if content is externally (public) or internally focused (those that work at EMBL) -->
+
+    <!-- Page infromation -->
+    <meta name="embl:maintainer" content="Communications Digital Team"> <!-- the contact person or group responsible for the page -->
+    <meta name="embl:last-review" content="2019-08-08"> <!-- the last time the page was reviewed or updated -->
+    <meta name="embl:review-cycle" content="90"> <!-- how long in days before the page should be checked -->
+    <meta name="embl:expiry" content="null"> <!-- if there is a fixed point in time when the page is no longer relevant -->
+  </head>
+  <body class="{{ bodyClass }}">
+    <!-- embl global header -->
+    <link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=574&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
+
+    <div class="vf-body">
+
+      <div class="vf-grid vf-u-margin__top--md">
+        <!-- embl global banner -->
+        <link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=580&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
+      </div>
+
+      <div class="vf-grid">
+        <div>
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+
+    {% include "footer.njk" %}
+
+  </body>
+</html>

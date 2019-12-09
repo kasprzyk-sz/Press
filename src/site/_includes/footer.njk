@@ -1,0 +1,24 @@
+<div class="vf-body">
+  <div class="vf-grid">
+    <div class="vf-body--text">
+      {% if serverInfo.environment == "development" %}
+      <code class="vf-code-example">
+        <pre class="vf-code-example__pre">
+  ⚠️ You're running the {{serverInfo.environment}} command.
+        </pre>
+      </code>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
+<!-- embl global footer -->
+<link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=569&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
+
+<!-- embl data protection banner -->
+<link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=581&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
+
+
+<!-- This page was generated on {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }} -->
+<script src="{{ '/scripts/scripts.js' | url }}"></script>
