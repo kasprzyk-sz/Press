@@ -611,6 +611,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-button/-/vf-button-1.0.0-beta.9.tgz#fde5be5c93137d6243f17b7743dd7f06d1b5e4d6"
   integrity sha512-s289tzW9GH1+XQT/uWPmMS+3k5eYUVcHOHenZwEivgwggvVgxPcZcsLufTgGpsSbdEGcJqVUf/vnv0FK4Je9Gg==
 
+"@visual-framework/vf-card@^1.0.0-alpha.8":
+  version "1.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-card/-/vf-card-1.0.0-alpha.8.tgz#65c96d108537c78e9572873b448664dbb0a640c4"
+  integrity sha512-M6uzdRj172pEp/cKS3FVDg0o0Wy4JCQWFvR6oQvqbynMVbvO+E9LHYAoHwbLw/6qF90/NKXHdTrzfijia7haPA==
+
 "@visual-framework/vf-code-example@^1.0.0-alpha.8":
   version "1.0.0-alpha.8"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-code-example/-/vf-code-example-1.0.0-alpha.8.tgz#020c8c7ee5672610b2b43de1c8d5d829cd6f3d03"

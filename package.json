@@ -74,5 +74,8 @@
     "url": "https://github.com/embl-communications/embl-eleventy/issues"
   },
   "homepage": "https://github.com/embl-communications/embl-eleventy#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@visual-framework/vf-card": "^1.0.0-alpha.8"
+  }
 }

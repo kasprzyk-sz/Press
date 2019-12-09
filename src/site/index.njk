@@ -4,85 +4,126 @@ date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 templateEngineOverride: njk, md
 ---
-
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
-  "vf_intro_lede": siteConfig.siteInformation.short_description,
-  "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
-  ]
-} %}
-
-<section class="embl-grid embl-grid--has-centered-content">
-  <div>
-    <!-- empty -->
-  </div>
-  <div class="vf-content">
-  {% markdown %}
-
-  ## Quickstart
-
-  ```
-
-      yarn create @visual-framework/vf-eleventy your-new-site-name embl-eleventy   
-
-  ```
-
-  This will install a new [`embl-eleventy`](https://github.com/embl-communications/embl-eleventy/) to a folder named `your-new-site-name`.
-
-  Then follow the onscreen prompts and links below to develop and configure.
-
-  ## Longer install?
-
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
-
-  {% endmarkdown %}
-
-  </div>
-</section>
-
-
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
-
-<div>
-  <!-- empty -->
-</div>
-<div class="vf-content">
-
-## What you get
-
-- the Eleventy static site generator
-- access to the Visual Framework component system
-
-### Component installation
-
-To add a component you can use npm/Yarn or install it manually.
-
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
-
-- installation: `yarn add @visual-framework/embl-logo`
-- updating: `yarn upgrade-interactive --latest`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Add your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
+    <div>
+        <!-- empty -->
+    </div>
+    <div>
+        <h1 class="vf-intro__heading vf-intro__heading--has-tag">Press <a href="JavaScript:Void(0);" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
+        <p class="vf-lede">Contact our press office for all the latest EMBL news</p>
+        <p class="vf-intro__text">The EMBL Press Office works with journalists interested in EMBL research and services across all its six sites. We can help you find experts, arrange interviews, filming requests and visits, and anything else you might need for your story.</p>
+    </div>
 </section>
+<section class="embl-grid embl-grid--has-centered-content">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Contact us</h1>
+    </div>
+    <div>
+    <div class="vf-grid | vf-grid__col-2">
+        <div>    
+        <article class="vf-summary | vf-summary--profile vf-summary--profile-l" data-embl-js-conditional-edit="6101">
+              <img class="vf-summary__image vf-summary__image--avatar" src="https://randomuser.me/api/portraits/men/97.jpg" alt="image of Martina Dees">
+      <h3 class="vf-summary__title">Press Officer</h3>
+              <p class="vf-summary__text">Martina Dees</p>
+      <p class="vf-summary__email">
+        <a href="mailto:martina.dees@embl.de" class="vf-summary__link vf-summary__link--secondary">martina.dees@embl.de</a>
+      </p>
+      </article>
+      </div>
+        <div>    
+        <article class="vf-summary | vf-summary--profile vf-summary--profile-l" data-embl-js-conditional-edit="6101">
+              <img class="vf-summary__image vf-summary__image--avatar" src="https://randomuser.me/api/portraits/women/8.jpg" alt="image of Martina Dees">
+      <h3 class="vf-summary__title">Press Officer</h3>
+              <p class="vf-summary__text">John Doe</p>
+      <p class="vf-summary__email">
+        <a href="mailto:martina.dees@embl.de" class="vf-summary__link vf-summary__link--secondary">martina.dees@embl.de</a>
+      </p>
+      </article>
+      </div>
+    </div>
+    </div>
+    </section>
+    <hr class="divider">
+  <div class="vf-grid vf-grid__col-4 | vf-u-margin__top--xxl"> 
+        <h1 class="vf-text vf-text-heading--3">Press assets for journalists</h1>
+<div class="vf-card">
+    <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Title Block
+        </h3>
+        <p class="vf-card__text">
+            two lines of text
+        </p>
+    </div>
+</div>
+<div class="vf-card">
+    <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Title Block
+        </h3>
+        <p class="vf-card__text">
+            two lines of text
+        </p>
+    </div>
+</div>
+<div class="vf-card">
+    <img src="http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder-350x350.png" alt="" class="vf-card__image">
+    <div class="vf-card__content">
+        <h3 class="vf-card__title">
+            Title Block
+        </h3>
+        <p class="vf-card__text">
+            two lines of text
+        </p>
+    </div>
+</div>
+  </div>
+  <hr class="divider">
+
+  <style>
+  .press article img {
+    display: none;
+  }
+
+  .press .vf-summary--news {
+    margin-bottom: 16px;
+  }
+  </style>
+
+  <section class="embl-grid embl-grid--has-centered-content | vf-u-margin__top--xxl | press">
+  <div>
+    <h1 class="vf-text vf-text-heading--3">Latest press releases</h1>
+  </div>
+  <div>
+    <link rel="import"
+      href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=5&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
+      data-target="self" data-embl-js-content-hub-loader>
+      <a id="harsh" href="#" class="vf-link ">See all EMBL press releases</a>
+  </div>
+  </section>
+    <hr class="divider">
+  <section class="embl-grid embl-grid--has-centered-content">
+  <div>
+    <h1 class="vf-text vf-text-heading--3">News</h1>
+  </div>
+  <div>
+    <link rel="import"
+      href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=5&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
+      data-target="self" data-embl-js-content-hub-loader>
+      <a id="harsh" href="#" class="vf-link ">See all EMBL news</a>
+  </div>
+  </section>
+      <hr class="divider">
+<section class="embl-grid embl-grid--has-centered-content | vf-u-margin__top--xxl">
+    <div>
+        <h1 class="vf-text vf-text-heading--3">Press and communication jobs</h1>
+    </div>
+    <div>
+   <div>
+    <link rel="import"
+      href="https://dev.content.embl.org/api/v1/pattern.html?pattern=vf-jobs-snippet&filter-content-type=jobs&limit=10&filter-all-fields=cancer"
+      data-target="self" data-embl-js-content-hub-loader>
+  </div>
+    </section>
